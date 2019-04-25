@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Ashley!</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/static/index.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-Qicheng" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        </button>
+				
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-btc" aria-hidden="true"></span> Ashley</a>
+			</div>
+				<div class="collapse navbar-collapse" id="nav-Qicheng">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign up <i class="fas fa-user-plus"></i></a></li>
+					<li><a href="#">Login <i class="fas fa-user"></i></a></li>
+				</ul>
+	    		</div>
+	    	</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="midcontent">
+					<form method='POST'> {% csrf_token %}
+						{{form.as_p}}
+					<input type='submit' value='Save' />
+					</form>
+					
+					<!-- {% block content %}
+					<h1> Welcome Ashley!</h1>
+					<h3>This is the signup page ;) <i class="fas fa-heart"></i></i></h3>
+					{% endblock %}
+					<hr>
+					<button class="btn btn-default btn-lg">Click me!</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

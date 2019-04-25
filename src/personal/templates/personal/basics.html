@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Basics</title>
+	{% load staticfiles %}
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="gallary.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  	<style type="text/css">
+  		.pink{
+  			background: pink;
+  			border: 1px solid purple;
+  		}
+  		.orange{
+  			background: orange;
+  			border: 1px dashed blue;
+  		}
+  	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-Qicheng" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        </button>
+				
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-btc" aria-hidden="true"></span> Qicheng</a>
+			</div>
+				<div class="collapse navbar-collapse" id="nav-Qicheng">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+	    		</div>
+	    	</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+		  		<h1><i class="fab fa-bitcoin"></i> Hello, Fellows!</h1>
+		  		<p>Welcome to BitcoinNews!</p>
+		  		<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button"></a></p> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="http://i.imgur.com/qK42fUu.jpg"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail"><img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <h1>Bootstrap Basics</h1>
+	<button class="btn btn-danger btn-xs">CLICK ME!</button>
+	<button class="btn btn-success btn-xs active">CLICK ME!</button>
+	<button class="btn btn-success btn-xs" disabled="disabled">CLICK ME!</button>
+
+	<a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a> -->
+<!-- Example Navbar -->
+
+	<!-- End of sample navbar -->
+<!-- 	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">
+				<div class="row">
+					<div class="col-lg-6 orange">LEFT</div>
+					<div class="col-lg-6 orange">RIGHT</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">
+				<div class="row">
+					<div class="col-lg-2 orange">1</div>
+					<div class="col-lg-2 orange">1</div>
+					<div class="col-lg-2 orange">1</div>
+					<div class="col-lg-2 orange">1</div>
+					<div class="col-lg-2 orange">1</div>
+					<div class="col-lg-2 orange">1</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ -->
+
+
+</body>
+</html>
